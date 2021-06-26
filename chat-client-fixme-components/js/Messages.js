@@ -8,6 +8,8 @@ var Messages = {
       _.extend(message, response);
       Messages._data.unshift(message); // add to begining of array
       callback();
+      // if we are rendering when the sever has succesfuly sored the item-
+      // this function is where i think a solution could be implemented.
     });
   },
 
