@@ -37,8 +37,8 @@ var sortedIndexOf = function(array, targetElement) {
   return -1;
 };
 
-
-var findDuplicatesTimeComplexity = TimeComplexity.LOGARITHMIC; // TODO: Update this constant
+                                       // corrected from logarithmic
+var findDuplicatesTimeComplexity = TimeComplexity.LINEAR; // TODO: Update this constant
 
 var findDuplicates = function(string) {
   var tracker = {};
@@ -56,8 +56,8 @@ var findDuplicates = function(string) {
   return result;
 };
 
-
-var bruteForcePasswordTimeComplexity = TimeComplexity.QUADRATIC; // TODO: Update this constant
+                                       // was quadratic :( i had the right answer at first but second guessed myself
+var bruteForcePasswordTimeComplexity = TimeComplexity.EXPONENTIAL; // TODO: Update this constant
 
 var bruteForcePassword = function(max) {
   var alphabet = 'abcdefghijklmnopqrstuvwxyz';
@@ -76,8 +76,8 @@ var bruteForcePassword = function(max) {
   findPassword('');
 };
 
-
-var hasDuplicatesTimeComplexity = TimeComplexity.LOGARITHMIC; // TODO: Update this constant
+                                           // was log
+var hasDuplicatesTimeComplexity = TimeComplexity.QUADRATIC; // TODO: Update this constant
 
 var hasDuplicates = function(array) {
   for (var i = 0; i < array.length; i++) {
@@ -90,8 +90,8 @@ var hasDuplicates = function(array) {
 };
 
 
-
-var removeLastThreeElementsTimeComplexity = TimeComplexity.LINEAR; // TODO: Update this constant
+                                       // corrected from linear
+var removeLastThreeElementsTimeComplexity = TimeComplexity.CONSTANT; // TODO: Update this constant
 
 var removeLastThreeElements = function(array) {
   var numberOfElementsToRemove = 3;
@@ -101,8 +101,8 @@ var removeLastThreeElements = function(array) {
   }
 };
 
-
-var increasingStepTimeComplexity = TimeComplexity.LINEAR; // TODO: Update this constant
+                                     // corrected from linear
+var increasingStepTimeComplexity = TimeComplexity.LOGARITHMIC; // TODO: Update this constant
 
 var increasingStep = function(number) {
   for (var i = 1; i < number; i = i * 2) {
