@@ -57,12 +57,12 @@ var FlyingHorse = function(name, color) {
 
 };
 
-FlyingHorse.prototype.Object.create(Horse.prototype);
+FlyingHorse.prototype = Object.create(Horse.prototype);
 FlyingHorse.prototype.constructor = FlyingHorse;
 
 
 FlyingHorse.prototype.goSomewhere = function(destination, milesToDestination) {
-  
+
   Horse.prototype.goSomewhere.call(this);
 
   if (milesToDestination < 10) {
